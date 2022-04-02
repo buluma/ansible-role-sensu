@@ -1,6 +1,5 @@
-#add requirements
+# add requirements
 ---
 - geerlingguy.packer
 - src: https://github.com/ansible-roles-matsumura/awscli.git
   name: matsumura.awscli
-  
