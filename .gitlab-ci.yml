@@ -46,11 +46,11 @@ testing:
 
 galaxy:
   script:
-    - ansible-galaxy role info buluma.ansible-sensu-install
+    - ansible-galaxy role info buluma.sensu
 
 role_testing:
   script:
-    - image=${image} tag=${tag} ansible-galaxy install buluma.ansible-sensu-install
+    - image=${image} tag=${tag} ansible-galaxy install buluma.sensu
   retry: 1
   parallel:
     matrix:
