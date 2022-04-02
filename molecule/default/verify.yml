@@ -15,5 +15,3 @@
         url: "http://{{ ansible_eth0.ipv4.address }}:8080/health"
         return_content: yes
       register: sensu_check_web_ui
-      failed_when:
-        - "'200' not in sensu_check_web_ui.content"
