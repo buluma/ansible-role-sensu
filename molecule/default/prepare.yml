@@ -8,3 +8,4 @@
     - role: buluma.bootstrap
     - role: buluma.epel
     - role: buluma.ca_certificates
+    - role: buluma.nginx
