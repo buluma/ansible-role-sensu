@@ -10,7 +10,13 @@
 #     state: latest
 
 # Add the Sensu repository
+# - name: Add Sensu repository
+#   ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash
+#   args:
+#     warn: no
+
 - name: Add Sensu repository
-  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash
-  args:
-    warn: no
+  shell: "set -o pipefail ; curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash"
+  register: sensu_repo
+  # changed_when: no
+  # failed_when: no
