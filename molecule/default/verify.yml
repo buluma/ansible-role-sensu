@@ -7,5 +7,7 @@
   tasks:
     - name: ensure sensu is installed
       ansible.builtin.apt:
-        name: sensu
+        name: sensu-go-backend
         state: latest
+
+    # curl http://127.0.0.1:8080/health

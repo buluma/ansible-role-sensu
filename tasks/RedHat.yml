@@ -6,5 +6,5 @@
 
 - name: ensure sensu is installed
   ansible.builtin.yum:
-    name: sensu
+    name: sensu-go
     state: latest
