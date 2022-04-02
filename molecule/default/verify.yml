@@ -11,7 +11,7 @@
 
     - name: check web ui
       ansible.builtin.uri:
-        url: "http://localhost:8080/health"
+        url: "http://127.0.0.1:8080/health"
         return_content: yes
       register: sensu_check_web_ui
       failed_when:
