@@ -1,10 +1,16 @@
 ---
-- name: ensure sensu.repo is copied
-  ansible.builtin.copy:
-    src: sensu.repo
-    dest: /etc/yum.repos.d/sensu.repo
+# - name: ensure sensu.repo is copied
+#   ansible.builtin.copy:
+#     src: sensu.repo
+#     dest: /etc/yum.repos.d/sensu.repo
+#
+# - name: ensure sensu is installed
+#   ansible.builtin.yum:
+#     name: sensu-go-backend
+#     state: latest
 
-- name: ensure sensu is installed
-  ansible.builtin.yum:
-    name: sensu-go
-    state: latest
+# Add the Sensu repository
+- name: Add Sensu repository
+  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash
+  args:
+    warn: no

@@ -15,3 +15,8 @@
   ansible.builtin.apt:
       name: sensu-go
       state: latest
+
+- name: ensure sensu-backend is installed
+  ansible.builtin.yum:
+    name: sensu-go-backend
+    state: latest
