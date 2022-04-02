@@ -3,7 +3,7 @@
 - name: Verify
   hosts: all
   become: yes
-  gather_facts: no
+  gather_facts: yes
 
   tasks:
     - debug: var=ansible_eth0.ipv4.address
