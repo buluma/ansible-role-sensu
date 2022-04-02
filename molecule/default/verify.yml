@@ -2,16 +2,17 @@
 # curl http://127.0.0.1:8080/health
 - name: Verify
   hosts: all
-  become: no
+  become: yes
   gather_facts: no
 
   tasks:
-    - name: ensure sensu is installed
-      ansible.builtin.apt:
-        name: sensu-go-backend
-        state: latest
+    - name: check if connection still works
+      ansible.builtin.ping:
 
-    - name: Start service sensu-backend, if not started
-      ansible.builtin.service:
-        name: sensu-backend
-        state: started
+    - name: check web ui
+      ansible.builtin.uri:
+        url: "http://localhost:8080/health"
+        return_content: yes
+      register: sensu_check_web_ui
+      failed_when:
+        - "'Sensu' not in sensu_check_web_ui.content"
