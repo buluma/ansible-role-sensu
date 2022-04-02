@@ -33,15 +33,6 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
     - role: buluma.epel
 ```
 
-
-## [Role Variables](#role-variables)
-
-The default values for the variables are set in `defaults/main.yml`:
-```yaml
----
-# defaults file for ansible-sensu-install
-```
-
 ## [Requirements](#requirements)
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-sensu/blob/main/requirements.txt).
