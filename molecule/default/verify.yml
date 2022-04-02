@@ -6,13 +6,14 @@
   gather_facts: no
 
   tasks:
+    - debug: var=ansible_eth0.ipv4.address
     - name: check if connection still works
       ansible.builtin.ping:
 
     - name: check web ui
       ansible.builtin.uri:
-        url: "http://127.0.0.1:8080/health"
+        url: "http://{{ ansible_eth0.ipv4.address }}:8080/health"
         return_content: yes
       register: sensu_check_web_ui
       failed_when:
-        - "'Sensu' not in sensu_check_web_ui.content"
+        - "'200' not in sensu_check_web_ui.content"

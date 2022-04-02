@@ -5,3 +5,4 @@ roles:
   - name: buluma.ca_certificates
   - name: buluma.nginx
 collections:
+  - name: community.general
