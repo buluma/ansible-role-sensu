@@ -15,8 +15,8 @@
 #   args:
 #     warn: no
 
-- name: Add Sensu repository
-  shell: "set -o pipefail ; curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash"
+- name: Add Sensu repository-RHEL
+  shell: "set -o pipefail ; curl -s https://packagecloud.io/install/repositories/sensu/stable/script.rpm.sh | sudo bash"
   register: sensu_repo
   # changed_when: no
   # failed_when: no
