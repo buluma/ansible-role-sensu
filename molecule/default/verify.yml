@@ -1,0 +1,11 @@
+---
+- name: Verify
+  hosts: all
+  become: no
+  gather_facts: no
+
+  tasks:
+    - name: ensure sensu is installed
+      ansible.builtin.apt:
+        name: sensu
+        state: latest

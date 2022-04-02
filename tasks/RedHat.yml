@@ -1,0 +1,9 @@
+- name: ensure sensu.repo is copied
+  ansible.builtin.copy:
+    src: sensu.repo
+    dest: /etc/yum.repos.d/sensu.repo
+
+- name: ensure sensu is installed
+  ansible.builtin.yum:
+    name: sensu
+    state: latest

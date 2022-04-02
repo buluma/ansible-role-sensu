@@ -1,0 +1,97 @@
+version: 2.1
+
+orbs:
+  ansible: orbss/ansible-playbook@0.0.4
+
+executors:
+  python:
+    docker:
+      - image: circleci/python
+
+jobs:
+  ansible-playbook:
+    executor: python
+
+    parameters:
+      version:
+        description: |
+          Ansible version
+        type: string
+        default: ''
+
+      galaxy-options:
+        description: |
+          ansible-galaxy command options
+        type: string
+        default: ''
+
+      galaxy-requirements-file:
+        description: |
+          Ansible Galaxy requirements file path
+        type: string
+        default: ''
+
+      galaxy-roles-path:
+        description: |
+          ansible-galaxy command roles-path option
+        type: string
+        default: ''
+
+      inventory:
+        description: |
+          Ansible inventory file. The default value must be empty,
+          so do not store any value to this environment variable.
+          The data must be registered in base64 format
+        type: env_var_name
+        default: NONEXISTENT_ANSIBLE_INVENTORY
+
+      inventory-parameters:
+        description: |
+          Ansible inventory parameters
+        type: string
+        default: ''
+
+      playbook:
+        description: |
+          The path of Ansible playbook
+        type: string
+
+      playbook-options:
+        description: |
+          Ansible-playbook command options
+        type: string
+        default: ''
+
+      private-key:
+        description: |
+          SSH private key file. The default value must be empty,
+          so do not store any value to this environment variable.
+          The data must be registered in base64 format
+        type: env_var_name
+        default: NONEXISTENT_ANSIBLE_SSH_KEY
+
+    steps:
+      - checkout
+      - ansible/install:
+          version: <<parameters.version>>
+      - ansible/galaxy:
+          galaxy-options: <<parameters.galaxy-options>>
+          galaxy-requirements-file: <<parameters.galaxy-requirements-file>>
+          galaxy-roles-path: <<parameters.galaxy-roles-path>>
+      - ansible/playbook:
+          inventory: <<parameters.inventory>>
+          inventory-parameters: <<parameters.inventory-parameters>>
+          playbook: <<parameters.playbook>>
+          playbook-options: <<parameters.playbook-options>>
+          private-key: <<parameters.private-key>>
+
+workflows:
+  version: 2
+  test-checkout:
+    jobs:
+      - ansible-playbook:
+          galaxy-requirements-file: tests/requirements.yml
+          inventory: ANSIBLE_INVENTORY
+          inventory-parameters:
+          playbook: tests/test.yml
+          private-key: ANSIBLE_SSH_KEY
