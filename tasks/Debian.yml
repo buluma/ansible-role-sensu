@@ -11,9 +11,9 @@
       # repo: deb https://eol-repositories.sensuapp.org/apt {{ ansible_distribution_release }} main
       repo: deb https://packagecloud.io/sensu/stable/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release | lower }} main
 
-- name: ensure sensu is installed
+- name: ensure sensu is installed-deb
   ansible.builtin.apt:
-      name: sensu-go
+      name: sensu-go-backend
       state: latest
 
 - name: ensure sensu-backend is installed
