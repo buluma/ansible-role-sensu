@@ -4,7 +4,7 @@ Installs and configures latest sensu
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-sensu/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sensu/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-sensu/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-sensu)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/sensu)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/sensu)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-sensu/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sensu/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-sensu/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-sensu)|[![quality](https://img.shields.io/ansible/quality/58624)](https://galaxy.ansible.com/buluma/sensu)|[![downloads](https://img.shields.io/ansible/role/d/58624)](https://galaxy.ansible.com/buluma/sensu)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -17,7 +17,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   gather_facts: yes
 
   roles:
-    - role: buluma.turn
+    - role: buluma.sensu
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
