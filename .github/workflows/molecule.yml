@@ -37,9 +37,9 @@ jobs:
       matrix:
         config:
           # - image: "enterpriselinux"
-           # tag: "7"
+          #   tag: "7"
           # - image: "enterpriselinux"
-           # tag: "latest"
+          #   tag: "latest"
           - image: "docker-ubuntu-systemd"
             tag: "latest"
           - image: "docker-ubuntu-systemd"
