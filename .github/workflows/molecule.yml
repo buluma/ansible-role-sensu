@@ -36,10 +36,10 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "enterpriselinux"
-            tag: "7"
-          - image: "enterpriselinux"
-            tag: "latest"
+          # - image: "enterpriselinux"
+           # tag: "7"
+          # - image: "enterpriselinux"
+           # tag: "latest"
           - image: "docker-ubuntu-systemd"
             tag: "latest"
           - image: "docker-ubuntu-systemd"
