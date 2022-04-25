@@ -11,7 +11,4 @@ exclude_paths:
   - ./.cache
 
 skip_list:
-  - experimental  # all rules tagged as experimental
-  - package-latest  # Package installs should not use latest.
-  - risky-file-permissions  # File permissions unset or incorrect.
-  - no-changed-when  # Commands should not change things if nothing needs doing
+  - package-latest
