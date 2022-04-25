@@ -10,6 +10,7 @@ variables:
 
 molecule:
   stage: build
+  allow_failure: true
   script:
     - image=${image} tag=${tag} molecule test
   artifacts:
@@ -20,10 +21,6 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "latest"
       - image: "docker-ubuntu-systemd"
@@ -41,10 +38,6 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "latest"
       - image: "docker-ubuntu-systemd"
@@ -66,10 +59,6 @@ role_testing:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "latest"
       - image: "docker-ubuntu-systemd"
