@@ -20,6 +20,8 @@ molecule:
         tag: "focal"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
+  tags:
+    - local
 
 testing:
   stage: test
