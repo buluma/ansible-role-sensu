@@ -5,4 +5,4 @@
 repository:
   description: Installs and configures latest sensu
   homepage: https://buluma.github.io/
-  topics: monitoring, sensu, ansible, molecule, tox, playbook, hacktoberfest
+  topics: monitoring, sensu, ansible, molecule, tox, playbook
