@@ -1,11 +1,11 @@
 ---
-- name: ensure sensu.repo is copied
+- name: RedHat | Ensure sensu.repo is copied
   ansible.builtin.copy:
     src: sensu.repo
     dest: /etc/yum.repos.d/sensu.repo
     mode: 0644
 
-- name: ensure sensu is installed
+- name: RedHat | Ensure sensu is installed
   ansible.builtin.yum:
     name: sensu-go-backend
     state: latest
