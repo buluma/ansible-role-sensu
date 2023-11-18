@@ -1,4 +1,4 @@
-# [sensu](#sensu)
+# [Ansible role sensu](#sensu)
 
 Installs and configures latest sensu
 
