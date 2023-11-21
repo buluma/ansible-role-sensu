@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-sensu/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-sensu/compare/v0.1.3...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#20](https://github.com/buluma/ansible-role-sensu/issues/20)
+- Update action [\#19](https://github.com/buluma/ansible-role-sensu/issues/19)
+
 ## [v0.1.3](https://github.com/buluma/ansible-role-sensu/tree/v0.1.3) (2022-07-19)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sensu/compare/v0.1.2...v0.1.3)
