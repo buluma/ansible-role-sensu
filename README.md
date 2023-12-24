@@ -1,10 +1,10 @@
-# [Ansible role sensu](#sensu)
+# Ansible role [sensu](https://galaxy.ansible.com/ui/standalone/roles/buluma/sensu/documentation)
 
 Installs and configures latest sensu
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-sensu/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-sensu/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-sensu/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-sensu/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sensu.svg)](https://github.com/buluma/ansible-role-sensu/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/sensu)](https://galaxy.ansible.com/ui/standalone/roles/buluma/sensu/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -94,13 +94,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-sensu/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-sensu/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
