@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-sensu/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-sensu/compare/v0.3.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 5 to 6 [\#29](https://github.com/buluma/ansible-role-sensu/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.3.0](https://github.com/buluma/ansible-role-sensu/tree/v0.3.0) (2024-01-20)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sensu/compare/v0.2.0...v0.3.0)
