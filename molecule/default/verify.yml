@@ -2,8 +2,8 @@
 # curl http://127.0.0.1:8080/health
 - name: Verify
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   tasks:
     - debug: var=ansible_eth0.ipv4.address
@@ -13,6 +13,6 @@
     - name: check web ui
       ansible.builtin.uri:
         url: "http://{{ ansible_eth0.ipv4.address }}:8080/health"
-        return_content: yes
+        return_content: true
       register: sensu_check_web_ui
-      ignore_errors: yes
+      ignore_errors: true

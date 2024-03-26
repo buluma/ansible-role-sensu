@@ -14,10 +14,10 @@
 # - name: Add Sensu repository
 #   ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash
 #   args:
-#     warn: no
+#     warn: false
 
 # - name: Add Sensu repository-RHEL
 #   shell: "set -o pipefail ; curl -s https://packagecloud.io/install/repositories/sensu/stable/script.rpm.sh | sudo bash"
 #   register: sensu_repo
-#   # changed_when: no
-#   # failed_when: no
+#   # changed_when: false
+#   # failed_when: false
