@@ -14,9 +14,9 @@
 - name: Debian | Ensure sensu is installed
   ansible.builtin.apt:
       name: sensu-go-backend
-      state: latest
+      state: present
 
 - name: Debian | Ensure sensu-backend is installed
   ansible.builtin.apt:
       name: sensu-go-backend
-      state: latest
+      state: present
