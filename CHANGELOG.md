@@ -4,6 +4,11 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-sensu/compare/v24.3.31...HEAD)
 
+**Closed issues:**
+
+- Update action [\#22](https://github.com/buluma/ansible-role-sensu/issues/22)
+- rebuild action [\#21](https://github.com/buluma/ansible-role-sensu/issues/21)
+
 **Merged pull requests:**
 
 - Bump ansible/ansible-lint from 24.12.2 to 25.1.0 [\#41](https://github.com/buluma/ansible-role-sensu/pull/41) ([dependabot[bot]](https://github.com/apps/dependabot))
