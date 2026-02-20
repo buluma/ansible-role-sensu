@@ -3,10 +3,10 @@
   ansible.builtin.copy:
     src: sensu.repo
     dest: /etc/yum.repos.d/sensu.repo
-    mode: '0644'
+    mode: "0644"
 
 - name: RedHat | Ensure sensu is installed
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: sensu-go-backend
     state: present
 
