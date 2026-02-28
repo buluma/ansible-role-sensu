@@ -9,7 +9,6 @@
   ansible.builtin.dnf:
     name: sensu-go-backend
     state: present
-
 # Add the Sensu repository
 # - name: Add Sensu repository
 #   ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/sensu/stable/script.deb.sh | sudo bash
