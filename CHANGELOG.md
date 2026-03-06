@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Bump docker/setup-buildx-action from 3 to 4 [\#43](https://github.com/buluma/ansible-role-sensu/pull/43) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.12.2 to 25.1.0 [\#41](https://github.com/buluma/ansible-role-sensu/pull/41) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.12.1 to 24.12.2 [\#40](https://github.com/buluma/ansible-role-sensu/pull/40) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.12.0 to 24.12.1 [\#39](https://github.com/buluma/ansible-role-sensu/pull/39) ([dependabot[bot]](https://github.com/apps/dependabot))
