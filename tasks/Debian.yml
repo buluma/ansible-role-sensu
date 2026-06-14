@@ -1,9 +1,9 @@
 ---
 - name: Debian | Ensure sensu apt repository key is deployed
-  ansible.builtin.apt_key:
-    # url: http://sensu.global.ssl.fastly.net/apt/pubkey.gpg EOL
-    # url: https://eol-repositories.sensuapp.org/apt/pubkey.gpg
+  ansible.builtin.get_url:
     url: https://packagecloud.io/sensu/stable/gpgkey
+    dest: /etc/apt/trusted.gpg.d/sensu.asc
+    mode: "0644"
 
 - name: Debian | Ensure sensu apt repository is deployed
   ansible.builtin.apt_repository:
