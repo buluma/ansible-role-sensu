@@ -6,13 +6,15 @@
   gather_facts: true
 
   tasks:
-    - debug: var=ansible_eth0.ipv4.address
-    - name: check if connection still works
+    - name: Show default IPv4 address
+      ansible.builtin.debug:
+        var: ansible_facts['default_ipv4']['address']
+    - name: Check if connection still works
       ansible.builtin.ping:
 
-    - name: check web ui
+    - name: Check web ui
       ansible.builtin.uri:
-        url: "http://{{ ansible_eth0.ipv4.address }}:8080/health"
+        url: "http://{{ ansible_facts['default_ipv4']['address'] }}:8080/health"
         return_content: true
       register: sensu_check_web_ui
       ignore_errors: true
