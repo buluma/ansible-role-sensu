@@ -4,5 +4,5 @@ roles:
   - name: buluma.epel
   - name: buluma.ca_certificates
   - name: buluma.nginx
-collections: []
+collections:
   - name: community.general
