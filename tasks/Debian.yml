@@ -8,8 +8,8 @@
 - name: Debian | Ensure sensu apt repository is deployed
   ansible.builtin.apt_repository:
     # repo: deb http://sensu.global.ssl.fastly.net/apt sensu main EOL
-    # repo: deb https://eol-repositories.sensuapp.org/apt {{ ansible_distribution_release }} main
-    repo: deb https://packagecloud.io/sensu/stable/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release | lower }} main
+    # repo: deb https://eol-repositories.sensuapp.org/apt {{ ansible_facts.distribution_release }} main
+    repo: deb https://packagecloud.io/sensu/stable/{{ ansible_facts.distribution | lower }}/ {{ ansible_facts.distribution_release | lower }} main
 
 - name: Debian | Ensure sensu is installed
   ansible.builtin.apt:
