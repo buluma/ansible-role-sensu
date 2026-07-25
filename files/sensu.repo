@@ -1,5 +1,5 @@
 [sensu]
 name=sensu
-baseurl=http://sensu.global.ssl.fastly.net/yum/$basearch/
+baseurl=https://packagecloud.io/sensu/stable/el/$releasever/$basearch
 gpgcheck=0
 enabled=1
